@@ -3,7 +3,7 @@
 import { Command } from 'commander';
 import chalk from 'chalk';
 import fs from 'fs/promises';
-import { existsSync, write } from 'fs';
+import { existsSync } from 'fs';
 
 const program = new Command();
 
