@@ -11,7 +11,7 @@ const log = console.log;
 
 const newline = '\n';
 
-log(chalk.green('starting...'));
+log(chalk.cyan('starting...'));
 
 async function readFile(fileName) {
   try {
@@ -114,6 +114,7 @@ program
     const markdown = createMarkdown(members, birthtime);
     await checkOrMakeFolder(writeFile);
     await writeFile(markdown);
+    log(chalk.green('done'));
   });
 
 await program.parseAsync();
