@@ -8,7 +8,7 @@
 A small CLI tool to create a Markdown version of the organizational members of a GitHub project.
 
 Requires the JSON export file from your orgs `/people` page.
-(https://github.com/orgs/<ORG NAME>/people)
+(`https://github.com/orgs/<ORG NAME>/people`)
 
 ## Why?
 
