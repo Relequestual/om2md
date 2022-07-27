@@ -33,4 +33,6 @@ Could this use the GitHub API to get collaborators as well as org members?
 It could, but it doesn't. Maybe if time allows at some point later.
 The GitHub API also provides more data that could be reported such as repo access and avatar.
 
-Could
+Could this do some other things or provide some output configuration?
+
+Sure! Please feel free to log an Issue and a Pull Request.
