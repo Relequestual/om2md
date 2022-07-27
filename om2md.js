@@ -28,6 +28,8 @@ function createMarkdown(members, birthtime) {
 
   output += '<!-- rqosstools om2md:start -->';
   output += newline;
+  output += '<!-- This list is generated using https://github.com/Relequestual/om2md -->';
+  output += newline;
   output += '<!-- Content between start and end comment tags has been automatically generated -->';
   output += newline;
   output += '# These are the organizations members';
@@ -39,7 +41,7 @@ function createMarkdown(members, birthtime) {
   output += members.filter((member => member.is_public))
     .sort(memberSort)
     .reduce((acc, member) =>
-      acc += `| ${member.name} | @${member.login} | ${member.role} |` + newline
+      acc += `| ${member.name} | [@${member.login}](https://github.com/${member.login}) | ${member.role} |` + newline
     , '');
   output += newline;
 
