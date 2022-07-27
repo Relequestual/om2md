@@ -1,7 +1,5 @@
 # Organization Members 2 Markdown - om2md
-<a href="https://project-types.github.io/#toy">
-  <img src="https://img.shields.io/badge/project%20type-toy-blue" alt="Toy Badge"/>
-</a>
+[![Project Type: Toy Badge](https://img.shields.io/badge/project%20type-toy-blue)](https://project-types.github.io/#toy)
 [![Project Status: Concept - Minimal or no implementation has been done yet, or the repository is only intended to be a limited example, demo, or proof-of-concept.](https://www.repostatus.org/badges/latest/concept.svg)](https://www.repostatus.org/#concept)
 ![GitHub](https://img.shields.io/github/license/relequestual/om2md)
 ![GitHub last commit](https://img.shields.io/github/last-commit/relequestual/om2md)
