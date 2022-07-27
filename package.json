@@ -1,0 +1,25 @@
+{
+  "name": "om2md",
+  "version": "0.0.1",
+  "description": "Create organizational members markdown file from GitHub JSON export",
+  "main": "index.js",
+  "author": "Ben Hutton @relequestual",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "chalk": "^5.0.1",
+    "commander": "^9.4.0",
+    "conf": "^10.1.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.20.0"
+  },
+  "engines": {
+    "node": "^16.16.0",
+    "yarn": "^1.22.19"
+  },
+  "volta": {
+    "node": "16.16.0",
+    "yarn": "1.22.19"
+  }
+}
