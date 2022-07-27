@@ -25,10 +25,16 @@ async function readFile(fileName) {
 
 function createMarkdown(members, birthtime) {
   var output = '';
+
+  output += '<!-- rqosstools om2md:start -->';
+  output += newline;
+  output += '<!-- Content between start and end comment tags has been automatically generated -->';
+  output += newline;
   output += '# These are the organizations members';
   output += newline + newline;
 
   output += '| Name | Account | Role |' + newline;
+  output += '| -- | -- | -- |' + newline;
 
   output += members.filter((member => member.is_public))
     .sort(memberSort)
@@ -37,7 +43,11 @@ function createMarkdown(members, birthtime) {
     , '');
   output += newline;
 
-  output += `Members list generated on ${birthtime}`;
+  output += `Members list downloaded from GitHub on ${birthtime}`;
+  output += newline;
+  output += '<!-- Content between start and end comment tags has been automatically generated -->';
+  output += newline;
+  output += '<!-- rqosstools om2md:end -->';
 
   return output;
 }
